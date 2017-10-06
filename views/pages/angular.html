@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="bearApp">
+
+<head>
+    <title>Integrating AngularJS with NodeJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+    <script src="scripts/myBears.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Amazing Bear Database</h1>
+    <div ng-controller="bearTableController">
+<!--        TODO: create a id card component for a bear
+            add a picture
+            add all uri interactions, with the path visible in the button
+            use sass
+-->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Rating</th>
+            </tr>
+            <tr ng-repeat="item in data.bears">
+                <td>{{item.name}}</td>
+                <td>{{item.rating}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
