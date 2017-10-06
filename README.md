@@ -20,7 +20,7 @@ To push changes from a non-master branch, run `git push heroku otherbranch:maste
 
 Make sure that the project is linked to the heroku remote repository with this command:
 
-`heroku git:remote -a enigmatic-plains-92812`
+`heroku git:remote -a <app-name>`
 
 Open add-ons with `heroku addons:open papertrail` (or `mongod`)
 
@@ -28,7 +28,7 @@ To edit configuration variables open `.env.local` (or use cmd line)
 
 Test the api locally or remotely using `postman`
 
-Alternatively, test api using browser `https://enigmatic-plains-92812.herokuapp.com/api/bears` 
+Alternatively, test api using browser `https://<app-name>.herokuapp.com/api/bears` 
 
 ## Running Locally
 
